@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#121212" />
+    <meta
+      name="description"
+      content="Find and filter the best cinemas across Australia and New Zealand. Search locations, ticket options, and showtimes."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Custom Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Global CSS Overrides -->
+    <style>
+      body {
+        background-color: #121212 !important;
+        color: #ffffff !important;
+        font-family: 'Poppins', sans-serif !important;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Dark mode filter for Leaflet / MapLibre map tiles */
+.leaflet-tile-container img, 
+.maplibregl-canvas, 
+.mapBox-map {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) !important;
+}
+      /* Dark scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e1e1e;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #e50914; /* Cinema Red */
+        border-radius: 4px;
+      }
+
+      
+    </style>
+
+    <title>Cinema Finder</title>
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
